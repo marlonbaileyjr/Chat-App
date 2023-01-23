@@ -1,10 +1,3 @@
-import { transitionHiddenElement } from '@cloudfour/transition-hidden-element';
-
-const menuTransitioner = transitionHiddenElement({
-    element: document.querySelector('#menu'),
-    visibleClass: 'is-open',
-  });
-
 const roomLogin=document.getElementById('join-room');
 		const loginDiv=document.getElementById('login-div');
         const form = document.getElementById('login');
@@ -59,7 +52,7 @@ async function login(event) {
     if(result.status==='ok'){
         localStorage.setItem('token', result.data);
         sessionStorage.setItem('username',result.username);
-        alert('User logged in successfully');
+        //alert('User logged in successfully');
         
         //login state
         let loggedIn=true
@@ -102,7 +95,7 @@ async function joinRoom(event) {
     if(result.status==='ok'){
         localStorage.setItem('token', result.data);
         sessionStorage.setItem('roomName',result.roomName);
-        alert('Joined room successfully');
+       // alert('Joined room successfully');
 
         //push array of recent rooms
         if(!localStorage.getItem('recentRooms')){
