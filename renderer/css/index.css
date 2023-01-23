@@ -1,0 +1,21 @@
+.header{grid-area: header;}
+.username{grid-area: username;}
+.password{grid-area: password;}
+.forgot-password{grid-area: forgot-password;}
+.register-button{grid-area: register-button;}
+.login-button{grid-area: login-button;}
+
+
+.login-div{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'username'
+    'password'
+    'login-button'
+    'forgot-password'
+    'register-button'
+    ;
+    gap: 10px
+
+}

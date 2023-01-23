@@ -1,0 +1,23 @@
+.chat-header{grid-area: header;}
+.room-sidebar{grid-area: menu;}
+.room-messages{ 
+    grid-area: messagebox;
+    display: flex;
+    flex-direction: column-reverse;}
+
+.chat-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'menu messagebox messagebox';
+    gap: 10px
+
+}
+
+.messages{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    height: 80vh;
+    
+}
