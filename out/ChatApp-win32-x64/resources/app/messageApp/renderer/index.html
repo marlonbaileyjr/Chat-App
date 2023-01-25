@@ -1,0 +1,96 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="join-container">
+		<form id="login" method="post">
+			<div id="login-div" class="login-div">
+				<header class="header">
+					<h1>LOGIN</h1>
+				</header>
+				<div class="form-control username">
+					<label for="username">Username</label>
+					<input 
+						class="input"
+						type="text"
+						name="username" 
+						id="username"
+						placeholder="Enter Username"
+						required
+					/>
+				</div>
+				<div class="form-control password" >
+					<label for="password">Password</label>
+					<input 
+						class="input"
+						type="password"
+						name="password" 
+						id="password"
+						placeholder="Enter Password"
+						required
+					/>
+				</div>
+				<div>
+					<button type="submit" class="btn login-button">Login</button>
+				</div>
+			
+				<div>
+					<a href="change-password.html" class="btn forgot-password">Forgot Password? Click Here</a>
+				</div>
+				<div>
+					<a href="register.html" class="btn register-button">No Login? Click Here to Register</a>
+				</div>
+			</div>
+		</form>
+		<form method="post" action="/chat" id="joinRoom"> 
+			<div hidden class="join-main" id="join-room">	
+				<header class="header">
+					<h1>Join Room</h1>
+				</header>
+				<div class="form-control">
+						<label for="roomName">Room Name</label>
+						<input
+							class="input"
+							type="text"
+							name="roomName"
+							id="roomName"
+							placeholder="Enter Room Name"
+							required
+							
+						/>
+				</div>
+				<div class="form-control">
+						<label for="roomPassword">Room Password</label>
+						<input 
+							class="input"
+							type="password"
+							name="roomPassword" 
+							id="roomPassword"
+							placeholder="Enter Password"
+							required
+						/>
+				</div>
+					<h4>Recent Rooms</h4>
+				<div>
+					<select class="recentRooms" id="recentRooms" placeholder="Select Room">
+						<option value="" disabled selected hidden>Recent Rooms</option>
+					</select>
+				</div>
+				<div>
+					<button type="submit" class="btn">Join Room</button>
+				</div>
+				<div>
+					<a href="create-room.html" class="btn">Create Room</a>
+				</div>
+			</div>	
+		</form>
+	</div>
+<script src=js/index.js></script />
+</body>
+</html>

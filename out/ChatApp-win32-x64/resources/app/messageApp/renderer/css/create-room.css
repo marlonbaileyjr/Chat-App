@@ -1,0 +1,17 @@
+
+.submit{grid-area: submit;}
+.roomName{grid-area: roomName;}
+.password{grid-area: password;}
+.header{grid-area: header;}
+
+
+.reg-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'roomName'
+    'password'
+    'submit';
+    gap: 10px
+
+}
