@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="container">
+    <div class="register">
     <form id="reg-form">
-        <h1>Register</h1>
+        <img src="images/LOGO.png" alt="logo" class="logo">
+        <header class="header">Register</header>
         <div>
             <label for="username">Username</label>
             <input 
-            class="input"
+            class="username"
             type="text" 
             name="username" 
             id="username" 
@@ -24,7 +28,7 @@
         <div>
             <label for="password">Password</label>
             <input 
-            class="input"
+            class="password"
             type="password" 
             name="password" 
             id="password" 
@@ -33,9 +37,12 @@
             />
         </div>
         <div>
-            <button type="submit">Register</button>
+            <button class="btn"type="submit">Register</button>
         </div>
-    </form>
+     </form>
+    </div>
+</div>
+   
 <script src=js/register.js></script>
 </body>
 </html>

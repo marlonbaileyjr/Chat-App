@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Chat App with Electron, Node, and MongoDB",
   "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonyzach/usfm-validator.git"
+  },
   "scripts": {
     "server": "node server",
     "start": "electron-forge start",

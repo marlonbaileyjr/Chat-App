@@ -1,0 +1,122 @@
+header{
+    grid-area: header;
+    font-size: large;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+label{
+    grid-area: label;
+    font-size: large;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btn {
+  appearance: button;
+  background-color: #207178;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #207178;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.btn:focus:not(:focus-visible),
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background-color: #fdb695;
+  border-color: #fdb695;
+}
+
+.btn:focus {
+  background-color: #fdb695;
+  border-color: #fdb695;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(32,113,120,255, 0.5) 0 0 0 .2rem;
+}
+
+.btn:active {
+  background-color: #fdb695;
+  background-image: none;
+  border-color: #fdb695;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.btn:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(32,113,120,255, 0.5) 0 0 0 .2rem;
+}
+
+.btn:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+input{
+    background-color: transparent;
+    font-size: medium;
+    height:40px; 
+    border: 0; 
+    padding: 5px 0 7px; 
+    border: 1px solid transparent; 
+    border-bottom-color: #ccc; 
+    transition: 0.4s;
+}
+
+input ~ .focus-border{
+    position: absolute; 
+    height: 36px; 
+    bottom: 0; 
+    right: 0; 
+    width: 0; 
+    transition: 0.4s;
+}
+
+input:focus ~ .focus-border{
+    width: 100%; 
+    transition: 0.4s; 
+    border: 2px solid #4caf50;
+}
+
+input:focus{
+    padding: 5px 14px 7px; 
+    transition: 0.4s;
+}
