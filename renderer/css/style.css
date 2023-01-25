@@ -2,7 +2,14 @@ header{
     grid-area: header;
     font-size: large;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 150%;
+}
+
+.logo{
+  width: 20%;
+  height: auto;
+  margin-bottom: 5px;
+  margin-top:2%;
 }
 
 label{

@@ -18,6 +18,7 @@ async function registerUser(e) {
     
     if(result.status==='ok'){
         alert('Password Changed Successfully');
+        window.location.assign('/index.html');
     }else{
         alert(result.error);
     }

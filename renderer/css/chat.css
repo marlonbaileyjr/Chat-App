@@ -1,9 +1,28 @@
-.chat-header{grid-area: header;}
-.room-sidebar{grid-area: menu;}
+.chat-header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn2{
+    font-size: 20px;
+}
+
+.logo1{
+    height: auto;
+    width: 70px
+}
+.room-sidebar{
+    height: 70%;
+    grid-area: menu;
+}
 .room-messages{ 
+    height:70%;
     grid-area: messagebox;
     display: flex;
-    flex-direction: column-reverse;}
+    flex-direction: column-reverse;
+}
 
 .chat-container{
     display: grid;
@@ -29,3 +48,4 @@
     margin-bottom: 5px;
     font-weight: bold;
 }
+
