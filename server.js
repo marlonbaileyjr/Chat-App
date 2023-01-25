@@ -15,7 +15,7 @@ const JWT_SECRET='asadcfkjhoiuiblew@nlkvdjnls^kjfbdcls$lifkebcps#jklnbfp;s*jbldv
 
 
 mongoose.set('strictQuery', true)
-mongoose.connect('mongodb://35.175.126.214:27017/chat-app-db'),{
+mongoose.connect('mongodb://admin:Markis55%23@100.26.138.225:27017/?authMechanism=DEFAULT'),{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
